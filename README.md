@@ -36,6 +36,8 @@ Habit-Formation/
 │   ├── pages/                  // 页面目录
 │   │   ├── MainPage.ets        // 首页（核心页面）
 │   │   ├── HabitDetailPage.ets // 习惯详情页
+│   │   ├── AddHabitDialog.ets
+│   │   ├── AppStyles.ets 
 │   │   ├── NotificationPage.ets// 通知页面
 │   │   ├── SettingsPage.ets    // 设置页面
 │   ├── HabitTypes.ets          // 类型定义文件（HabitData/StatisticsData等）
@@ -147,9 +149,3 @@ export interface CategoryStatData {
 | 查看统计     | 切换至“统计”标签 → 自动计算并展示概览数据/排行/分类统计 → 滚动查看全部内容 |
 | 删除习惯     | 进入习惯详情页 → 点击删除按钮 → 弹窗确认 → 删除并更新统计数据 → 提示“习惯已删除” |
 
-### 6. 视觉设计亮点
-- 配色：主色为蓝色（#3B82F6），分类色差异化（健康-绿、学习-紫、工作-蓝、生活-黄），背景以浅灰（#F8FAFC）+ 白色（#FFFFFF）为主，视觉清爽；
-- 布局：统一使用圆角（16px/12px/8px）+ 阴影，符合鸿蒙轻拟物设计风格；
-- 响应式：适配不同屏幕尺寸，关键区域使用layoutWeight填充剩余空间，Scroll组件确保内容可滚动。
-
-以上功能均已在代码中实现，核心逻辑（打卡、统计计算、交互反馈）完整，UI布局贴合鸿蒙设计规范，满足用户习惯养成的全流程需求。
