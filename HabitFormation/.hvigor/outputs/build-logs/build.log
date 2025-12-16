@@ -14046,3 +14046,349 @@ Require stack:
 [2025-12-16T15:48:58.375] [DEBUG] debug-file - bad codeSnippet [object Object]
 [2025-12-16T15:48:58.385] [DEBUG] debug-file - watch worker: worker is ready to be terminated.
 [2025-12-16T15:48:58.385] [DEBUG] debug-file - Server currently has 0 watch-worker
+[2025-12-16T16:05:59.150] [DEBUG] debug-file - session manager: set active socket. socketId=10ITDLRoMZX96QnsAABL
+[2025-12-16T16:05:59.154] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T16:05:59.158] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined
+}
+[2025-12-16T16:05:59.161] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2025-12-16T16:05:59.162] [DEBUG] debug-file - hvigorfile, resolving D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\hvigorfile.ts
+[2025-12-16T16:05:59.165] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2025-12-16T16:05:59.165] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2025-12-16T16:05:59.168] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-12-16T16:05:59.169] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-12-16T16:05:59.169] [DEBUG] debug-file - Product 'default' build option initialized
+[2025-12-16T16:05:59.169] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-12-16T16:05:59.170] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2025-12-16T16:05:59.171] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2025-12-16T16:05:59.173] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-12-16T16:05:59.198] [DEBUG] debug-file - Sdk init in 27 ms 
+[2025-12-16T16:05:59.200] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2025-12-16T16:05:59.200] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2025-12-16T16:05:59.200] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\hvigorfile.ts
+[2025-12-16T16:05:59.200] [DEBUG] debug-file - hvigorfile, resolve finished D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\hvigorfile.ts
+[2025-12-16T16:05:59.200] [DEBUG] debug-file - hvigorfile, resolving D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\hvigorfile.ts
+[2025-12-16T16:05:59.202] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2025-12-16T16:05:59.203] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2025-12-16T16:05:59.205] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\factory\plugin-factory.js
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\index.js
+- D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\hvigorfile.ts
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor\src\base\internal\lifecycle\configuration.js
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor\src\base\boot\index.js
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\cluster\worker-process-lifecycle.js
+- D:\worksoft\DevEco\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\process\daemon-process-boot-script.js
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T16:05:59.206] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T16:05:59.207] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2025-12-16T16:05:59.208] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T16:05:59.208] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2025-12-16T16:05:59.208] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T16:05:59.208] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2025-12-16T16:05:59.209] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2025-12-16T16:05:59.209] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2025-12-16T16:05:59.209] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\hvigorfile.ts
+[2025-12-16T16:05:59.209] [DEBUG] debug-file - hvigorfile, resolve finished D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\hvigorfile.ts
+[2025-12-16T16:05:59.224] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 16 ms 
+[2025-12-16T16:05:59.224] [DEBUG] debug-file - project has submodules:entry
+[2025-12-16T16:05:59.225] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-12-16T16:05:59.228] [DEBUG] debug-file - load to the disk finished
+[2025-12-16T16:05:59.228] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T16:05:59.231] [DEBUG] debug-file - Module HabitFormation Collected Dependency: 
+[2025-12-16T16:05:59.231] [DEBUG] debug-file - Module HabitFormation's total dependency: 0
+[2025-12-16T16:05:59.232] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T16:05:59.233] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-12-16T16:05:59.233] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-12-16T16:05:59.234] [DEBUG] debug-file - Configuration phase cost:73 ms 
+[2025-12-16T16:05:59.234] [DEBUG] debug-file - Configuration task cost before running: 79 ms 
+[2025-12-16T16:05:59.237] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2025-12-16T16:05:59.237] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.242] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 4 ms .
+[2025-12-16T16:05:59.242] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.32263946533203125
+[2025-12-16T16:05:59.243] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2025-12-16T16:05:59.243] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2025-12-16T16:05:59.244] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.244] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.0391082763671875
+[2025-12-16T16:05:59.244] [DEBUG] debug-file - runTaskFromQueue task cost before running: 88 ms 
+[2025-12-16T16:05:59.244] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2025-12-16T16:05:59.244] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2025-12-16T16:05:59.245] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.246] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.247] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.12482452392578125
+[2025-12-16T16:05:59.247] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2025-12-16T16:05:59.248] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2025-12-16T16:05:59.248] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.249] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.249] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.095916748046875
+[2025-12-16T16:05:59.249] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2025-12-16T16:05:59.250] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2025-12-16T16:05:59.250] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01548004150390625
+[2025-12-16T16:05:59.250] [DEBUG] debug-file - runTaskFromQueue task cost before running: 95 ms 
+[2025-12-16T16:05:59.250] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2025-12-16T16:05:59.251] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2025-12-16T16:05:59.254] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.255] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.255] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.30773162841796875
+[2025-12-16T16:05:59.256] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgContextInfo...  
+[2025-12-16T16:05:59.257] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2025-12-16T16:05:59.258] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.259] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.259] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.1306304931640625
+[2025-12-16T16:05:59.260] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2025-12-16T16:05:59.261] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2025-12-16T16:05:59.262] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 2 ms .
+[2025-12-16T16:05:59.262] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.15027618408203125
+[2025-12-16T16:05:59.263] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2025-12-16T16:05:59.264] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2025-12-16T16:05:59.266] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 2 ms .
+[2025-12-16T16:05:59.266] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.1351318359375
+[2025-12-16T16:05:59.266] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2025-12-16T16:05:59.267] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2025-12-16T16:05:59.267] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.267] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file 'D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\startup\default\startup_config.json' does not exist.
+[2025-12-16T16:05:59.267] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.268] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.13529205322265625
+[2025-12-16T16:05:59.268] [DEBUG] debug-file - runTaskFromQueue task cost before running: 113 ms 
+[2025-12-16T16:05:59.268] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 2 ms 
+[2025-12-16T16:05:59.269] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@PreviewProcessResource
+[2025-12-16T16:05:59.270] [DEBUG] debug-file - Executing task :entry:default@PreviewProcessResource
+[2025-12-16T16:05:59.270] [DEBUG] debug-file - Task 'entry:default@PreviewProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.270] [DEBUG] debug-file - entry : default@PreviewProcessResource cost memory 0.0553436279296875
+[2025-12-16T16:05:59.271] [DEBUG] debug-file - runTaskFromQueue task cost before running: 115 ms 
+[2025-12-16T16:05:59.271] [INFO] debug-file - Finished :entry:default@PreviewProcessResource... after 1 ms 
+[2025-12-16T16:05:59.272] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2025-12-16T16:05:59.274] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T16:05:59.280] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 5 ms .
+[2025-12-16T16:05:59.280] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.6114959716796875
+[2025-12-16T16:05:59.282] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2025-12-16T16:05:59.282] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@PreviewCompileResource
+[2025-12-16T16:05:59.283] [DEBUG] debug-file - Executing task :entry:default@PreviewCompileResource
+[2025-12-16T16:05:59.294] [DEBUG] debug-file - entry:default@PreviewCompileResource is not up-to-date, since the output file 'D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default' has been changed.
+[2025-12-16T16:05:59.295] [DEBUG] debug-file - Incremental task entry:default@PreviewCompileResource pre-execution cost: 12 ms .
+[2025-12-16T16:05:59.306] [DEBUG] debug-file - Use tool [D:\worksoft\DevEco\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'D:\\worksoft\\DevEco\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-x',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\AppScope\\resources',
+  '-o',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\app_compiled'
+]
+[2025-12-16T16:05:59.306] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 91779072,
+  heapTotal: 126554112,
+  heapUsed: 117783984,
+  external: 3166367,
+  arrayBuffers: 138860
+} os memoryUsage :10.705604553222656
+[2025-12-16T16:05:59.487] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2025-12-16T16:05:59.490] [DEBUG] debug-file - Use tool [D:\worksoft\DevEco\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'D:\\worksoft\\DevEco\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-x',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\src\\main\\resources',
+  '-o',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\module_compiled'
+]
+[2025-12-16T16:05:59.490] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 92086272,
+  heapTotal: 126554112,
+  heapUsed: 117940000,
+  external: 3166493,
+  arrayBuffers: 139001
+} os memoryUsage :10.736454010009766
+[2025-12-16T16:05:59.636] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2025-12-16T16:05:59.638] [DEBUG] debug-file - Use tool [D:\worksoft\DevEco\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'D:\\worksoft\\DevEco\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-m',
+  'entry',
+  '-f',
+  '-j',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\process_profile\\default\\module.json',
+  '-p',
+  'c***n',
+  '-r',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\generated\\r\\default\\ResourceTable.h',
+  '-z',
+  '--ids',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\ids_map',
+  '--defined-ids',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\ids_map\\id_defined.json',
+  '-i',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\app_compiled',
+  '-i',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default\\module_compiled',
+  '-o',
+  'D:\\worksoft\\DevEco\\DevEcoStudioProjects\\HabitFormation\\entry\\.preview\\default\\intermediates\\res\\default',
+  '--defined-sysids',
+  'D:\\worksoft\\DevEco\\DevEco Studio\\sdk\\default\\hms\\toolchains\\id_defined.json'
+]
+[2025-12-16T16:05:59.639] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 92094464,
+  heapTotal: 126554112,
+  heapUsed: 118129880,
+  external: 3166619,
+  arrayBuffers: 140285
+} os memoryUsage :10.741966247558594
+[2025-12-16T16:05:59.819] [DEBUG] debug-file - Info: hardware concurrency count is : 20
+Info: thread count is : 20
+
+[2025-12-16T16:05:59.819] [DEBUG] debug-file - Info: thread pool is started
+
+[2025-12-16T16:05:59.825] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2025-12-16T16:05:59.825] [DEBUG] debug-file - Info: thread pool is stopped
+
+[2025-12-16T16:05:59.830] [DEBUG] debug-file - entry : default@PreviewCompileResource cost memory -0.0008392333984375
+[2025-12-16T16:05:59.830] [DEBUG] debug-file - runTaskFromQueue task cost before running: 675 ms 
+[2025-12-16T16:05:59.830] [INFO] debug-file - Finished :entry:default@PreviewCompileResource... after 548 ms 
+[2025-12-16T16:05:59.831] [DEBUG] debug-file - Executing task :entry:default@PreviewHookCompileResource
+[2025-12-16T16:05:59.831] [DEBUG] debug-file - entry : default@PreviewHookCompileResource cost memory 0.01659393310546875
+[2025-12-16T16:05:59.831] [DEBUG] debug-file - runTaskFromQueue task cost before running: 676 ms 
+[2025-12-16T16:05:59.831] [INFO] debug-file - Finished :entry:default@PreviewHookCompileResource... after 1 ms 
+[2025-12-16T16:05:59.832] [DEBUG] debug-file - Executing task :entry:default@CopyPreviewProfile
+[2025-12-16T16:05:59.832] [DEBUG] debug-file - entry:default@CopyPreviewProfile is not up-to-date, since the output file 'D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\resources\base\profile' does not exist.
+[2025-12-16T16:05:59.833] [DEBUG] debug-file - Incremental task entry:default@CopyPreviewProfile pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.836] [DEBUG] debug-file - entry : default@CopyPreviewProfile cost memory 0.212982177734375
+[2025-12-16T16:05:59.836] [DEBUG] debug-file - runTaskFromQueue task cost before running: 681 ms 
+[2025-12-16T16:05:59.836] [INFO] debug-file - Finished :entry:default@CopyPreviewProfile... after 5 ms 
+[2025-12-16T16:05:59.837] [DEBUG] debug-file - Executing task :entry:default@ReplacePreviewerPage
+[2025-12-16T16:05:59.837] [DEBUG] debug-file - entry : default@ReplacePreviewerPage cost memory 0.01654052734375
+[2025-12-16T16:05:59.837] [DEBUG] debug-file - runTaskFromQueue task cost before running: 682 ms 
+[2025-12-16T16:05:59.837] [INFO] debug-file - Finished :entry:default@ReplacePreviewerPage... after 1 ms 
+[2025-12-16T16:05:59.838] [DEBUG] debug-file - Executing task :entry:buildPreviewerResource
+[2025-12-16T16:05:59.838] [DEBUG] debug-file - entry : buildPreviewerResource cost memory 0.0135040283203125
+[2025-12-16T16:05:59.838] [DEBUG] debug-file - runTaskFromQueue task cost before running: 682 ms 
+[2025-12-16T16:05:59.838] [INFO] debug-file - Finished :entry:buildPreviewerResource... after 1 ms 
+[2025-12-16T16:05:59.838] [DEBUG] debug-file - Executing task :entry:default@PreviewUpdateAssets
+[2025-12-16T16:05:59.840] [DEBUG] debug-file - entry:default@PreviewUpdateAssets is not up-to-date, since the output file 'D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\module.json' has been changed.
+[2025-12-16T16:05:59.840] [DEBUG] debug-file - Incremental task entry:default@PreviewUpdateAssets pre-execution cost: 1 ms .
+[2025-12-16T16:05:59.840] [DEBUG] debug-file - entry : default@PreviewUpdateAssets cost memory -1.6332778930664062
+[2025-12-16T16:05:59.841] [DEBUG] debug-file - runTaskFromQueue task cost before running: 685 ms 
+[2025-12-16T16:05:59.841] [INFO] debug-file - Finished :entry:default@PreviewUpdateAssets... after 3 ms 
+[2025-12-16T16:05:59.842] [DEBUG] debug-file - Executing task :entry:default@PreviewArkTS
+[2025-12-16T16:05:59.842] [DEBUG] debug-file - obfuscationOptions: undefined
+[2025-12-16T16:05:59.845] [DEBUG] debug-file - entry:default@PreviewArkTS is not up-to-date, since the input file 'D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\ResourceTable.txt' has been changed.
+[2025-12-16T16:05:59.845] [DEBUG] debug-file - Incremental task entry:default@PreviewArkTS pre-execution cost: 3 ms .
+[2025-12-16T16:05:59.852] [DEBUG] debug-file - session manager: binding session. socketId=10ITDLRoMZX96QnsAABL, threadId=1@36.
+[2025-12-16T16:05:59.852] [DEBUG] debug-file - entry : default@PreviewArkTS cost memory 1.1583328247070312
+[2025-12-16T16:06:02.813] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchStart
+[2025-12-16T16:06:02.815] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchStart
+[2025-12-16T16:06:05.240] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.242] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.243] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.245] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.246] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.247] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.248] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.249] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.250] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.251] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.252] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.255] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.256] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.241] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.257] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.243] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.258] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.259] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.260] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.261] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.262] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.262] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.263] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:05.244] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchLog
+[2025-12-16T16:06:05.264] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchLog
+[2025-12-16T16:06:06.767] [DEBUG] debug-file - watch worker: send response to session manager. Response type: WatchResult
+[2025-12-16T16:06:06.769] [DEBUG] debug-file - session manager: watch message received from worker 1. Type: WatchResult
+[2025-12-16T16:06:06.768] [DEBUG] debug-file - Ark compile finished.
+[2025-12-16T16:06:06.769] [INFO] debug-file - Finished :entry:default@PreviewArkTS... after 6 s 927 ms 
+[2025-12-16T16:06:06.770] [DEBUG] debug-file - Executing task :entry:PreviewBuild
+[2025-12-16T16:06:06.770] [DEBUG] debug-file - entry : PreviewBuild cost memory 0.01337432861328125
+[2025-12-16T16:06:06.770] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 614 ms 
+[2025-12-16T16:06:06.770] [INFO] debug-file - Finished :entry:PreviewBuild... after 1 ms 
+[2025-12-16T16:06:06.778] [INFO] debug-file - BUILD SUCCESSFUL in 7 s 622 ms 
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\generated\profile\default\ModuleInfo.ts cache.
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2025-12-16T16:06:06.778] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgContextInfo is up-to-date.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\startup\default\startup_config.json cache.
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2025-12-16T16:06:06.779] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2025-12-16T16:06:06.780] [DEBUG] debug-file - Update task entry:default@PreviewCompileResource input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\src\main\resources cache by regenerate.
+[2025-12-16T16:06:06.784] [DEBUG] debug-file - Update task entry:default@PreviewCompileResource input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\merge_profile\default\module.json cache by regenerate.
+[2025-12-16T16:06:06.784] [DEBUG] debug-file - Update task entry:default@PreviewCompileResource output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default cache.
+[2025-12-16T16:06:06.791] [DEBUG] debug-file - Update task entry:default@PreviewCompileResource output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\generated\r\default cache.
+[2025-12-16T16:06:06.791] [DEBUG] debug-file - Incremental task entry:default@PreviewCompileResource post-execution cost:12 ms .
+[2025-12-16T16:06:06.791] [DEBUG] debug-file - Update task entry:default@CopyPreviewProfile input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\src\main\resources\base\profile cache by regenerate.
+[2025-12-16T16:06:06.792] [DEBUG] debug-file - Update task entry:default@CopyPreviewProfile output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\resources\base\profile cache.
+[2025-12-16T16:06:06.792] [DEBUG] debug-file - Incremental task entry:default@CopyPreviewProfile post-execution cost:1 ms .
+[2025-12-16T16:06:06.793] [DEBUG] debug-file - Update task entry:default@PreviewUpdateAssets output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\module.json cache.
+[2025-12-16T16:06:06.793] [DEBUG] debug-file - Update task entry:default@PreviewUpdateAssets output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\resources\base\profile\main_pages.json cache.
+[2025-12-16T16:06:06.793] [DEBUG] debug-file - Incremental task entry:default@PreviewUpdateAssets post-execution cost:1 ms .
+[2025-12-16T16:06:06.794] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\loader\default cache by regenerate.
+[2025-12-16T16:06:06.794] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\ResourceTable.txt cache from map.
+[2025-12-16T16:06:06.794] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2025-12-16T16:06:06.795] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2025-12-16T16:06:06.795] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\src\main\ets cache by regenerate.
+[2025-12-16T16:06:06.796] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2025-12-16T16:06:06.796] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2025-12-16T16:06:06.797] [DEBUG] debug-file - Update task entry:default@PreviewArkTS input file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\src\mock\mock-config.json5 cache by regenerate.
+[2025-12-16T16:06:06.797] [DEBUG] debug-file - Update task entry:default@PreviewArkTS output file:D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\.preview\default\intermediates\loader_out\default\ets cache.
+[2025-12-16T16:06:06.797] [DEBUG] debug-file - Incremental task entry:default@PreviewArkTS post-execution cost:4 ms .
+[2025-12-16T16:06:06.814] [DEBUG] debug-file - There's no busy workers and idle workers need cleanup.
+[2025-12-16T16:06:06.814] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-12-16T16:07:01.656] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T16:07:01.656] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T16:07:01.676] [DEBUG] debug-file - bad codeSnippet [object Object]
+[2025-12-16T16:07:01.683] [DEBUG] debug-file - watch worker: worker is ready to be terminated.
+[2025-12-16T16:07:01.683] [DEBUG] debug-file - Server currently has 0 watch-worker
