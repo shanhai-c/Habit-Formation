@@ -1,603 +1,0 @@
-Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ<Èif (!("finalizeConstruction" in ViewPU.prototype)) {
-    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
-}
-// pages/NotificationPage.ets
-import router from '@ohos.router';
-class NotificationPage extends ViewPU {
-    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
-        super(parent, __localStorage, elmtId, extraInfo);
-        if (typeof paramsLambda === "function") {
-            this.paramsGenerator_ = paramsLambda;
-        }
-        this.__notifications = new ObservedPropertyObjectPU(this.getMockNotifications(), this, "notifications");
-        this.setInitiallyProvidedValue(params);
-        this.finalizeConstruction();
-    }
-    setInitiallyProvidedValue(params) {
-        if (params.notifications !== undefined) {
-            this.notifications = params.notifications;
-        }
-    }
-    updateStateVars(params) {
-    }
-    purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__notifications.purgeDependencyOnElmtId(rmElmtId);
-    }
-    aboutToBeDeleted() {
-        this.__notifications.aboutToBeDeleted();
-        SubscriberManager.Get().delete(this.id__());
-        this.aboutToBeDeletedInternal();
-    }
-    get notifications() {
-        return this.__notifications.get();
-    }
-    set notifications(newValue) {
-        this.__notifications.set(newValue);
-    }
-    initialRender() {
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Column.create();
-            Column.debugLine("entry/src/main/ets/pages/NotificationPage.ets(11:5)", "entry");
-            Column.width('100%');
-            Column.height('100%');
-            Column.backgroundColor('#F8FAFC');
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // é¡¶éƒ¨æ ‡é¢˜æ 
-            Row.create({ space: 12 });
-            Row.debugLine("entry/src/main/ets/pages/NotificationPage.ets(13:7)", "entry");
-            // é¡¶éƒ¨æ ‡é¢˜æ 
-            Row.width('100%');
-            // é¡¶éƒ¨æ ‡é¢˜æ 
-            Row.padding({ left: 20, right: 20, top: 12, bottom: 12 });
-            // é¡¶éƒ¨æ ‡é¢˜æ 
-            Row.backgroundColor('#FFFFFF');
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777232, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" });
-            Image.debugLine("entry/src/main/ets/pages/NotificationPage.ets(14:9)", "entry");
-            Image.width(24);
-            Image.height(24);
-            Image.onClick(() => {
-                router.back();
-            });
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('é€šçŸ¥ä¸­å¿ƒ');
-            Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(21:9)", "entry");
-            Text.fontSize(20);
-            Text.fontColor('#1E293B');
-            Text.fontWeight(FontWeight.Bold);
-            Text.layoutWeight(1);
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('å…¨éƒ¨å·²è¯»');
-            Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(27:9)", "entry");
-            Text.fontSize(14);
-            Text.fontColor('#3B82F6');
-            Text.onClick(() => {
-                this.markAllAsRead();
-            });
-        }, Text);
-        Text.pop();
-        // é¡¶éƒ¨æ ‡é¢˜æ 
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            If.create();
-            // é€šçŸ¥åˆ—è¡¨
-            if (this.notifications.length === 0) {
-                this.ifElseBranchUpdateFunction(0, () => {
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Column.create({ space: 20 });
-                        Column.debugLine("entry/src/main/ets/pages/NotificationPage.ets(40:9)", "entry");
-                        Column.width('100%');
-                        Column.height('100%');
-                        Column.justifyContent(FlexAlign.Center);
-                        Column.alignItems(HorizontalAlign.Center);
-                    }, Column);
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Image.create({ "id": 16777245, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" });
-                        Image.debugLine("entry/src/main/ets/pages/NotificationPage.ets(41:11)", "entry");
-                        Image.width(120);
-                        Image.height(120);
-                    }, Image);
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Text.create('æš‚æ— é€šçŸ¥');
-                        Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(44:11)", "entry");
-                        Text.fontSize(16);
-                        Text.fontColor('#64748B');
-                    }, Text);
-                    Text.pop();
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Text.create('å½“æœ‰æ–°çš„æ¶ˆæ¯æ—¶ä¼šåœ¨è¿™é‡Œæ˜¾ç¤º');
-                        Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(47:11)", "entry");
-                        Text.fontSize(14);
-                        Text.fontColor('#94A3B8');
-                    }, Text);
-                    Text.pop();
-                    Column.pop();
-                });
-            }
-            else {
-                this.ifElseBranchUpdateFunction(1, () => {
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        List.create({ space: 12 });
-                        List.debugLine("entry/src/main/ets/pages/NotificationPage.ets(56:9)", "entry");
-                        List.width('100%');
-                        List.height('100%');
-                        List.padding(20);
-                    }, List);
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        ForEach.create();
-                        const forEachItemGenFunction = _item => {
-                            const item = _item;
-                            {
-                                const itemCreation = (elmtId, isInitialRender) => {
-                                    ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-                                    ListItem.create(deepRenderFunction, true);
-                                    if (!isInitialRender) {
-                                        ListItem.pop();
-                                    }
-                                    ViewStackProcessor.StopGetAccessRecording();
-                                };
-                                const itemCreation2 = (elmtId, isInitialRender) => {
-                                    ListItem.create(deepRenderFunction, true);
-                                    ListItem.debugLine("entry/src/main/ets/pages/NotificationPage.ets(58:13)", "entry");
-                                };
-                                const deepRenderFunction = (elmtId, isInitialRender) => {
-                                    itemCreation(elmtId, isInitialRender);
-                                    this.buildNotificationItem.bind(this)(item);
-                                    ListItem.pop();
-                                };
-                                this.observeComponentCreation2(itemCreation2, ListItem);
-                                ListItem.pop();
-                            }
-                        };
-                        this.forEachUpdateFunction(elmtId, this.notifications, forEachItemGenFunction);
-                    }, ForEach);
-                    ForEach.pop();
-                    List.pop();
-                });
-            }
-        }, If);
-        If.pop();
-        Column.pop();
-    }
-    buildNotificationItem(item, parent = null) {
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create({ space: 12 });
-            Row.debugLine("entry/src/main/ets/pages/NotificationPage.ets(75:5)", "entry");
-            Row.width('100%');
-            Row.padding(16);
-            Row.backgroundColor('#FFFFFF');
-            Row.borderRadius(16);
-            Row.shadow({ radius: 8, color: '#0000000A', offsetX: 0, offsetY: 2 });
-            Row.onClick(() => {
-                this.markAsRead(item.id);
-            });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // é€šçŸ¥å›¾æ ‡
-            Stack.create();
-            Stack.debugLine("entry/src/main/ets/pages/NotificationPage.ets(77:7)", "entry");
-        }, Stack);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Circle.create();
-            Circle.debugLine("entry/src/main/ets/pages/NotificationPage.ets(78:9)", "entry");
-            Circle.width(48);
-            Circle.height(48);
-            Circle.fill(item.type === 'reminder' ? '#3B82F620' :
-                item.type === 'achievement' ? '#10B98120' :
-                    '#8B5CF620');
-        }, Circle);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create(this.getNotificationIcon(item.type));
-            Image.debugLine("entry/src/main/ets/pages/NotificationPage.ets(85:9)", "entry");
-            Image.width(24);
-            Image.height(24);
-        }, Image);
-        // é€šçŸ¥å›¾æ ‡
-        Stack.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // é€šçŸ¥å†…å®¹
-            Column.create({ space: 4 });
-            Column.debugLine("entry/src/main/ets/pages/NotificationPage.ets(91:7)", "entry");
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create();
-            Row.debugLine("entry/src/main/ets/pages/NotificationPage.ets(92:9)", "entry");
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(item.title);
-            Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(93:11)", "entry");
-            Text.fontSize(16);
-            Text.fontColor('#1E293B');
-            Text.fontWeight(item.read ? FontWeight.Normal : FontWeight.Bold);
-            Text.layoutWeight(1);
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(item.time);
-            Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(99:11)", "entry");
-            Text.fontSize(12);
-            Text.fontColor('#94A3B8');
-        }, Text);
-        Text.pop();
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(item.content);
-            Text.debugLine("entry/src/main/ets/pages/NotificationPage.ets(104:9)", "entry");
-            Text.fontSize(14);
-            Text.fontColor('#64748B');
-            Text.maxLines(2);
-            Text.textOverflow({ overflow: TextOverflow.Ellipsis });
-        }, Text);
-        Text.pop();
-        // é€šçŸ¥å†…å®¹
-        Column.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            If.create();
-            // æœªè¯»æ ‡è®°
-            if (!item.read) {
-                this.ifElseBranchUpdateFunction(0, () => {
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Circle.create();
-                        Circle.debugLine("entry/src/main/ets/pages/NotificationPage.ets(113:9)", "entry");
-                        Circle.width(8);
-                        Circle.height(8);
-                        Circle.fill('#EF4444');
-                        Circle.margin({ left: 12 });
-                    }, Circle);
-                });
-            }
-            else {
-                this.ifElseBranchUpdateFunction(1, () => {
-                });
-            }
-        }, If);
-        If.pop();
-        Row.pop();
-    }
-    getNotificationIcon(type) {
-        switch (type) {
-            case 'reminder': return { "id": 16777244, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" };
-            case 'achievement': return { "id": 16777243, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" };
-            case 'system': return { "id": 16777231, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" };
-            default: return { "id": 16777244, "type": 20000, params: [], "bundleName": "com.example.habitformation", "moduleName": "entry" };
-        }
-    }
-    markAsRead(id) {
-        this.notifications = this.notifications.map((notification) => {
-            if (notification.id === id) {
-                // æ˜ç¡®åˆ›å»ºæ–°çš„ NotificationItem å¯¹è±¡
-                const updatedNotification = {
-                    id: notification.id,
-                    title: notification.title,
-                    content: notification.content,
-                    type: notification.type,
-                    time: notification.time,
-                    read: true // ä¿®æ”¹ä¸ºå·²è¯»
-                };
-                return updatedNotification;
-            }
-            return notification;
-        });
-    }
-    markAllAsRead() {
-        this.notifications = this.notifications.map((notification) => {
-            // æ˜ç¡®åˆ›å»ºæ–°çš„ NotificationItem å¯¹è±¡
-            const updatedNotification = {
-                id: notification.id,
-                title: notification.title,
-                content: notification.content,
-                type: notification.type,
-                time: notification.time,
-                read: true // ä¿®æ”¹ä¸ºå·²è¯»
-            };
-            return updatedNotification;
-        });
-    }
-    getMockNotifications() {
-        return [
-            {
-                id: 1,
-                title: 'ä¹ æƒ¯æé†’',
-                content: 'ä»Šå¤©æ˜¯åšæŒé˜…è¯»çš„ç¬¬30å¤©ï¼Œç»§ç»­ä¿æŒï¼',
-                type: 'achievement',
-                time: '10:30',
-                read: false
-            },
-            {
-                id: 2,
-                title: 'è¿åŠ¨æ—¶é—´',
-                content: 'åˆ«å¿˜äº†ä»Šå¤©çš„30åˆ†é’Ÿè¿åŠ¨',
-                type: 'reminder',
-                time: 'ä»Šå¤© 19:00',
-                read: false
-            },
-            {
-                id: 3,
-                title: 'ç³»ç»Ÿé€šçŸ¥',
-                content: 'æ–°ç‰ˆæœ¬å·²å‘å¸ƒï¼Œç‚¹å‡»æŸ¥çœ‹æ›´æ–°å†…å®¹',
-                type: 'system',
-                time: 'æ˜¨å¤©',
-                read: true
-            }
-        ];
-    }
-    rerender() {
-        this.updateDirtyElements();
-    }
-    static getEntryName() {
-        return "NotificationPage";
-    }
-}
-registerNamedRoute(() => new NotificationPage(undefined, {}), "", { bundleName: "com.example.habitformation", moduleName: "entry", pagePath: "pages/NotificationPage", pageFullPath: "entry/src/main/ets/pages/NotificationPage", integratedHsp: "false", moduleType: "followWithHap" });
-//# sourceMappingURL=NotificationPage.js.mapÂ‘Ùa hvigor_ignore_D:_worksoft_DevEco_DevEco Studio_sdk_default_openharmony_ets_api_@ohos.router.d.tsÙdD:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entry\src\main\ets\pages\NotificationPage.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙ<D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entryÙ6D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation¥entry¥1.0.0Ô  Ù<D:\worksoft\DevEco\DevEcoStudioProjects\HabitFormation\entryÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFile³createIntrinsicTypeÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚS// pages/NotificationPage.ets
-import router from '@ohos.router';
-import { NotificationItem } from './HabitTypes';
-
-@Entry
-@Component
-struct NotificationPage {
-  @State notifications: NotificationItem[] = this.getMockNotifications();
-
-  build() {
-    Column() {
-      // é¡¶éƒ¨æ ‡é¢˜æ 
-      Row({ space: 12 }) {
-        Image($r('app.media.back'))
-          .width(24)
-          .height(24)
-          .onClick(() => {
-            router.back();
-          })
-
-        Text('é€šçŸ¥ä¸­å¿ƒ')
-          .fontSize(20)
-          .fontColor('#1E293B')
-          .fontWeight(FontWeight.Bold)
-          .layoutWeight(1)
-
-        Text('å…¨éƒ¨å·²è¯»')
-          .fontSize(14)
-          .fontColor('#3B82F6')
-          .onClick(() => {
-            this.markAllAsRead();
-          })
-      }
-      .width('100%')
-      .padding({ left: 20, right: 20, top: 12, bottom: 12 })
-      .backgroundColor('#FFFFFF')
-
-      // é€šçŸ¥åˆ—è¡¨
-      if (this.notifications.length === 0) {
-        Column({ space: 20 }) {
-          Image($r('app.media.no_notifications'))
-            .width(120)
-            .height(120)
-          Text('æš‚æ— é€šçŸ¥')
-            .fontSize(16)
-            .fontColor('#64748B')
-          Text('å½“æœ‰æ–°çš„æ¶ˆæ¯æ—¶ä¼šåœ¨è¿™é‡Œæ˜¾ç¤º')
-            .fontSize(14)
-            .fontColor('#94A3B8')
-        }
-        .width('100%')
-        .height('100%')
-        .justifyContent(FlexAlign.Center)
-        .alignItems(HorizontalAlign.Center)
-      } else {
-        List({ space: 12 }) {
-          ForEach(this.notifications, (item: NotificationItem) => {
-            ListItem() {
-              this.buildNotificationItem(item)
-            }
-          })
-        }
-        .width('100%')
-        .height('100%')
-        .padding(20)
-      }
-    }
-    .width('100%')
-    .height('100%')
-    .backgroundColor('#F8FAFC')
-  }
-
-  @Builder
-  buildNotificationItem(item: NotificationItem) {
-    Row({ space: 12 }) {
-      // é€šçŸ¥å›¾æ ‡
-      Stack() {
-        Circle()
-          .width(48)
-          .height(48)
-          .fill(item.type === 'reminder' ? '#3B82F620' :
-            item.type === 'achievement' ? '#10B98120' :
-              '#8B5CF620')
-
-        Image(this.getNotificationIcon(item.type))
-          .width(24)
-          .height(24)
-      }
-
-      // é€šçŸ¥å†…å®¹
-      Column({ space: 4 }) {
-        Row() {
-          Text(item.title)
-            .fontSize(16)
-            .fontColor('#1E293B')
-            .fontWeight(item.read ? FontWeight.Normal : FontWeight.Bold)
-            .layoutWeight(1)
-
-          Text(item.time)
-            .fontSize(12)
-            .fontColor('#94A3B8')
-        }
-
-        Text(item.content)
-          .fontSize(14)
-          .fontColor('#64748B')
-          .maxLines(2)
-          .textOverflow({ overflow: TextOverflow.Ellipsis })
-      }
-
-      // æœªè¯»æ ‡è®°
-      if (!item.read) {
-        Circle()
-          .width(8)
-          .height(8)
-          .fill('#EF4444')
-          .margin({ left: 12 })
-      }
-    }
-    .width('100%')
-    .padding(16)
-    .backgroundColor('#FFFFFF')
-    .borderRadius(16)
-    .shadow({ radius: 8, color: '#0000000A', offsetX: 0, offsetY: 2 })
-    .onClick(() => {
-      this.markAsRead(item.id);
-    })
-  }
-
-  private getNotificationIcon(type: string): Resource {
-    switch (type) {
-      case 'reminder': return $r('app.media.bell');
-      case 'achievement': return $r('app.media.trophy');
-      case 'system': return $r('app.media.info');
-      default: return $r('app.media.bell');
-    }
-  }
-
-  private markAsRead(id: number): void {
-    this.notifications = this.notifications.map((notification: NotificationItem): NotificationItem => {
-      if (notification.id === id) {
-        // æ˜ç¡®åˆ›å»ºæ–°çš„ NotificationItem å¯¹è±¡
-        const updatedNotification: NotificationItem = {
-          id: notification.id,
-          title: notification.title,
-          content: notification.content,
-          type: notification.type,
-          time: notification.time,
-          read: true // ä¿®æ”¹ä¸ºå·²è¯»
-        };
-        return updatedNotification;
-      }
-      return notification;
-    });
-  }
-
-  private markAllAsRead(): void {
-    this.notifications = this.notifications.map((notification: NotificationItem): NotificationItem => {
-      // æ˜ç¡®åˆ›å»ºæ–°çš„ NotificationItem å¯¹è±¡
-      const updatedNotification: NotificationItem = {
-        id: notification.id,
-        title: notification.title,
-        content: notification.content,
-        type: notification.type,
-        time: notification.time,
-        read: true // ä¿®æ”¹ä¸ºå·²è¯»
-      };
-      return updatedNotification;
-    });
-  }
-  private getMockNotifications(): NotificationItem[] {
-    return [
-      {
-        id: 1,
-        title: 'ä¹ æƒ¯æé†’',
-        content: 'ä»Šå¤©æ˜¯åšæŒé˜…è¯»çš„ç¬¬30å¤©ï¼Œç»§ç»­ä¿æŒï¼',
-        type: 'achievement',
-        time: '10:30',
-        read: false
-      },
-      {
-        id: 2,
-        title: 'è¿åŠ¨æ—¶é—´',
-        content: 'åˆ«å¿˜äº†ä»Šå¤©çš„30åˆ†é’Ÿè¿åŠ¨',
-        type: 'reminder',
-        time: 'ä»Šå¤© 19:00',
-        read: false
-      },
-      {
-        id: 3,
-        title: 'ç³»ç»Ÿé€šçŸ¥',
-        content: 'æ–°ç‰ˆæœ¬å·²å‘å¸ƒï¼Œç‚¹å‡»æŸ¥çœ‹æ›´æ–°å†…å®¹',
-        type: 'system',
-        time: 'æ˜¨å¤©',
-        read: true
-      }
-    ];
-  }
-}ÀÔrD‘¬@ohos.routerÔrE—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÃÙa hvigor_ignore_D:_worksoft_DevEco_DevEco Studio_sdk_default_openharmony_ets_api_@ohos.router.d.tsAÃªoh-resolveÂ“ÔrF–§version¤fileªsourceRoot§sources¥names¨mappings³NotificationPage.js ‘´NotificationPage.etsÜH’”    ”  –”   ” ” ” ”! !”" "’” ” ‘”  •”< -”Ì@ 1”ÌA 2”ÌU ÌF”ÌW ÌH‘” 0’” 	” ’” 	” ‘” 	’” 
-” 
-
-–” 
-” 
-
-” ÌC” ÌC
-” ÌC” ÌC–” 
-” 
-
-” ÌD” ÌD” ÌD”  ÌD–” 
-” 
-
-” ÌE”" ÌE”# ÌE”, ÌE’” ” ˜” ” 	” 
-” ” ”  ”" ”$ ’” ” –” ” 	” !” !” !” !’” ” Ü ” ” 	” "” "” "” "” "”  "”" "”$ "”) " ”+ ""”- "$”/ "&”2 ")”4 "+”6 "-”8 "/”> "5”Ì@ "7”ÌB "9”ÌD ";’” ” –” ” 	” #” #”  #”) # ’” ” –” ” ” ” ” ” –” ” ” ” ” ” —” ” ” ” ” ” ” –” ” ” ” ” ” ’” 
-” ”” ” ” ” –” ” ” ” ” ” –” ” ” ” ” ”$ ˜” ” ” ” ” ”&  ”' !”+ %–” ” ” ” ” ” ’” ” ”” ” ” ” –” ” ” ” ” ” –” ” ” ” ” ”$ —” ” ” ” ” ” ” –” ” ” ”" ”$  ”% !’” 
-” ’” ” ’” ” ’” ” 	’” %” %š” &” &
-” &” &”" &”# &”) &#”. &(”/ &)”1 &+˜” '” '”& '”( '”- '”/ '”1 '”3 '–” '” '” 2	”$ 2”% 2”+ 2–” '” '” 3	”% 3”& 3”, 3˜” '” '” 4	”- 4”. 4”7 4!”8 4"”> 4(˜” '” '” 5	”) 5”* 5”9 5#”: 5$”Ì@ 5*’” (
-” (–” (
-” (” )”# )”$ )”' )–” (
-” (” *”$ *”% *”( *”” +
-” +”$ +”* +–” +
-” +” ,”% ,”& ,”( ,–” +
-” +” -”& -”' -”0 - ’” +
-” +”” .
-” .”$ .”3 .–” .
-” .” /”% /”& /”( /–” .
-” .” 0”& 0”' 0”0 0 ’” .
-” .’” '” '‘” 6‘” 6˜” 7” 7”$ 7”& 7”+ 7”- 7”/ 7”1 7–” 7” 7” >	”" >”# >”) >–” 7” 7” ?	”# ?”$ ?”* ?–” 7” 7” Ì@	”$ Ì@”% Ì@”' Ì@’” 8
-” 8’”( 9”0 9—”$ :”( :”) :”> :(”ÌJ :)”ÌN :-”ÌO :.’”$ 9”, 9’”  9”( 9””; 8”? 8”Ì@ 8”ÌM 8$’” 8
-” 8’” 7” 7‘” ÌA’” 
-” 
-
-‘” ÌF”” ÌI” ÌI” ÌI” ÌI.˜” ÌJ” ÌJ” ÌJ” ÌJ
-” ÌJ”  ÌJ”" ÌJ”$ ÌJ–” ÌJ” ÌJ” Ìw” Ìw
-” Ìw” Ìw–” ÌJ” ÌJ” Ìx” Ìx” Ìx” Ìx–” ÌJ” ÌJ” Ìy” Ìy”  Ìy”) Ìy–” ÌJ” ÌJ” Ìz” Ìz” Ìz” ÌzÜ ” ÌJ” ÌJ” Ì{” Ì{” Ì{” Ì{” Ì{”! Ì{”" Ì{”$ Ì{”) Ì{”+ Ì{ ”6 Ì{+”8 Ì{-”? Ì{4”ÌA Ì{6”ÌB Ì{7”ÌD Ì{9”ÌK Ì{Ì@”ÌM Ì{ÌB”ÌN Ì{ÌC”ÌP Ì{ÌE—” ÌJ” ÌJ” Ì|” Ì|” Ì|” Ì|” Ì|š” Ì}” Ì}
-” Ì}” Ì}”  Ì}”$ Ì}”% Ì}”' Ì}”( Ì}”) Ì}’” Ì~” Ì~’” ÌK” ÌK’” ÌL” ÌL’” ÌM” ÌM–” ÌM” ÌM” ÌN” ÌN” ÌN” ÌN–” ÌM” ÌM” ÌO” ÌO” ÌO” ÌOÜ ” ÌM” ÌM” ÌP” ÌP” ÌP” ÌP” ÌP”! ÌP”& ÌP”0 ÌP(”1 ÌP)”2 ÌP*”3 ÌP+”> ÌP6”? ÌP7”Ì@ ÌP8œ” ÌQ” ÌQ” ÌQ” ÌQ” ÌQ”+ ÌQ'”, ÌQ(”- ÌQ)”. ÌQ*”9 ÌQ5”: ÌQ6”; ÌQ7’” ÌR” ÌR›” ÌT” ÌT” ÌT” ÌT” ÌT”1 ÌT&”2 ÌT'”6 ÌT+”7 ÌT,”; ÌT0”< ÌT1–” ÌT” ÌT” ÌU” ÌU” ÌU” ÌU–” ÌT” ÌT” ÌV” ÌV” ÌV” ÌV’” ÌK” ÌK’” ÌL” ÌL’” ÌY” ÌY˜” ÌZ” ÌZ” ÌZ” ÌZ”! ÌZ”# ÌZ”$ ÌZ”& ÌZ’” Ì[” Ì[–” Ì\
-” Ì\” Ì\” Ì\” Ì\”" Ì\–” Ì\
-” Ì\” Ì]” Ì]” Ì]” Ì]–” Ì\
-” Ì\” Ì^” Ì^” Ì^”$ Ì^ Ü ” Ì\
-” Ì\” Ì_” Ì_” Ì_”  Ì_”! Ì_”% Ì_!”& Ì_"”' Ì_#”( Ì_$”2 Ì_.”3 Ì_/”9 Ì_5”: Ì_6”; Ì_7”< Ì_8”ÌF Ì_ÌB”ÌG Ì_ÌC”ÌK Ì_ÌG–” Ì\
-” Ì\” Ì`” Ì`” Ì`” Ì`’” Ì\
-” Ì\–” Ìb
-” Ìb” Ìb” Ìb” Ìb”! Ìb–” Ìb
-” Ìb” Ìc” Ìc” Ìc” Ìc–” Ìb
-” Ìb” Ìd” Ìd” Ìd”$ Ìd ’” Ìb
-” Ìb’” Ì[” Ì[–” Ìg” Ìg” Ìg” Ìg” Ìg”$ Ìg–” Ìg” Ìg” Ìh” Ìh” Ìh” Ìh–” Ìg” Ìg” Ìi” Ìi” Ìi”$ Ìi–” Ìg” Ìg” Ìj” Ìj” Ìj” Ìjœ” Ìg” Ìg” Ìk” Ìk” Ìk”  Ìk”( Ìk"”* Ìk$”6 Ìk0”7 Ìk1”? Ìk9”ÌA Ìk;’” Ìg” Ìg’” ÌY” ÌY’” ÌZ” ÌZ’” Ìn” Ìn—” Ìo” Ìo
-” Ìo” Ìo” Ìo” Ìo” Ìo’” Ìp” Ìp–” Ìp” Ìp” Ìq”$ Ìq”% Ìq”& Ìq–” Ìp” Ìp” Ìr”% Ìr”& Ìr”' Ìr–” Ìp” Ìp” Ìs”# Ìs”$ Ìs”- Ìsš” Ìp” Ìp” Ìt”% Ìt”& Ìt”( Ìt”, Ìt”. Ìt”0 Ìt”2 Ìt‘” Ìu‘” Ìu’” ÌJ” ÌJ‘” Ì”” Ì
-” Ì” Ì” Ì*”” Ì‚” Ì‚” Ì‚” Ì‚–” Ìƒ” Ìƒ” Ìƒ” Ìƒ” Ìƒ”Ì• Ìƒ3–” Ì„” Ì„” Ì„” Ì„”  Ì„”Ì˜ Ì„8–” Ì…” Ì…” Ì…” Ì…” Ì…”Ì“ Ì…1•” Ì†” Ì†” Ì†” Ì†”Ì Ì†+‘”	 Ì‡’” Ìˆ” Ìˆ”” ÌŠ
-” ÌŠ” ÌŠ” ÌŠŸ” Ì‹” Ì‹” Ì‹	” Ì‹” Ì‹”! Ì‹”" Ì‹”/ Ì‹+”0 Ì‹,”3 Ì‹/”4 Ì‹0”5 Ì‹1”ÌA Ì‹ÌO”ÌC Ì‹Ìc”ÌE Ì‹Ìe˜” ÌŒ” ÌŒ
-” ÌŒ” ÌŒ” ÌŒ”$ ÌŒ”& ÌŒ ”( ÌŒ"’” Ì”- Ì%”” Ì” Ì”) Ì!”, Ì6–” Ì
-” Ì” Ì”$ Ì”% Ì”' Ì–” Ì
-” Ì” Ì”' Ì”( Ì”- Ì#–” Ì‘
-” Ì‘” Ì‘”) Ì‘”* Ì‘ ”1 Ì‘'–” Ì’
-” Ì’” Ì’”& Ì’”' Ì’”+ Ì’!–” Ì“
-” Ì“” Ì“”& Ì“”' Ì“”+ Ì“!–” Ì”
-” Ì”” Ì”” Ì”” Ì””' Ì”’” Ì•	” Ì•
-”” Ì–” Ì–”* Ì–"”+ Ì–#‘” Ì—”” Ì˜” Ì˜” Ì˜”  Ì˜”” Ì™”	 Ì™”
- Ì™” Ì™’” Ìš” Ìš’” Ìœ
-” ÌœŸ” Ì” Ì” Ì	” Ì” Ì”! Ì”" Ì”/ Ì+”0 Ì,”3 Ì/”4 Ì0”5 Ì1”ÌA ÌÌO”ÌC ÌÌc”ÌE ÌÌe’” Ì”) Ì#”” ÌŸ” ÌŸ”% ÌŸ”( ÌŸ4–” Ì ” Ì 
-” Ì ”  Ì ”! Ì ”# Ì –” Ì¡” Ì¡” Ì¡”# Ì¡”$ Ì¡”) Ì¡!–” Ì¢” Ì¢” Ì¢”% Ì¢”& Ì¢”- Ì¢%–” Ì£” Ì£” Ì£”" Ì£”# Ì£”' Ì£–” Ì¤” Ì¤” Ì¤”" Ì¤”# Ì¤”' Ì¤–” Ì¥” Ì¥” Ì¥” Ì¥” Ì¥”# Ì¥’” Ì¦” Ì¦”” Ì§” Ì§”& Ì§ ”' Ì§!”” Ì¨”	 Ì¨”
- Ì¨” Ì¨’” Ì©” Ì©’” Ìª
-” Ìª’” Ì«” Ì«‘” Ì¬”” Ì­” Ì­
-” Ì­” Ì­”” Ì®” Ì®” Ì®” Ì®”” Ì¯” Ì¯” Ì¯”- Ì¯%”” Ì°” Ì°” Ì°”# Ì°”” Ì±” Ì±” Ì±” Ì±”” Ì²” Ì²” Ì²” Ì²‘” Ì³‘” Ì´”” Ìµ” Ìµ
-” Ìµ” Ìµ”” Ì¶” Ì¶” Ì¶” Ì¶”” Ì·” Ì·” Ì·”' Ì·”” Ì¸” Ì¸” Ì¸”  Ì¸”” Ì¹” Ì¹” Ì¹”  Ì¹”” Ìº” Ìº” Ìº” Ìº‘” Ì»‘” Ì¼”” Ì½” Ì½
-” Ì½” Ì½”” Ì¾” Ì¾” Ì¾” Ì¾”” Ì¿” Ì¿” Ì¿”* Ì¿"”” ÌÀ” ÌÀ” ÌÀ” ÌÀ”” ÌÁ” ÌÁ” ÌÁ” ÌÁ”” ÌÂ” ÌÂ” ÌÂ” ÌÂ‘” ÌÃ’”	 ÌÄ”
- ÌÄ’” ÌÅ” ÌÅÔrG–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜQ‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
- ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ì ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ‘”  ÌÍ ‘”  ÌÎ ‘”  ÌÏ ‘”  ÌĞ ‘”  ÌÑ ‘”  ÌÒ ‘”  ÌÓ ‘”  ÌÔ ‘”  ÌÕ ‘”  ÌÖ ‘”  Ì× ‘”  ÌØ ‘”  ÌÙ ‘”  ÌÚ ‘”  ÌÛ ‘”  ÌÜ ‘”  Ìİ ‘”  ÌŞ ‘”  Ìß ‘”  Ìà ‘”  Ìá ‘”  Ìâ ‘”  Ìã ‘”  Ìä ‘”  Ìå ‘”  Ìæ ‘”  Ìç ‘”  Ìè ‘”  Ìé ‘”  Ìê ‘”  Ìë ‘”  Ìì ‘”  Ìí ‘”  Ìî ‘”  Ìï ‘”  Ìğ ‘”  Ìñ ‘”  Ìò ‘”  Ìó ‘”  Ìô ‘”  Ìõ ‘”  Ìö ‘”  Ì÷ ‘”  Ìø ‘”  Ìù ‘”  Ìú ‘”  Ìû ‘”  Ìü ‘”  Ìı ‘”  Ìş ‘”  Ìÿ ‘”  Í  ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í	 ‘”  Í
- ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í  ‘”  Í! ‘”  Í" ‘”  Í# ‘”  Í$ ‘”  Í% ‘”  Í& ‘”  Í' ‘”  Í( ‘”  Í) ‘”  Í* ‘”  Í+ ‘”  Í, ‘”  Í- ‘”  Í. ‘”  Í/ ‘”  Í0 ‘”  Í1 ‘”  Í2 ‘”  Í3 ‘”  Í4 ‘”  Í5 ‘”  Í6 ‘”  Í7 ‘”  Í8 ‘”  Í9 ‘”  Í: ‘”  Í; ‘”  Í< ‘”  Í= ‘”  Í> ‘”  Í? ‘”  Í@ ‘”  ÍA ‘”  ÍB ‘”  ÍC ‘”  ÍD ‘”  ÍE ‘”  ÍF ‘”  ÍG ‘”  ÍH ‘”  ÍI ‘”  ÍJ ‘”  ÍK ‘”  ÍL ‘”  ÍM ‘”  ÍN ‘”  ÍO ‘”  ÍP ÔrH’§missing¦pluginÃ¦genAbcÂÔ  ÔrI”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache‘ÔrJ•¤type¥start£endªspecifiers¦source±ImportDeclarationÌŸÌÁ‘ÔrK”¤type¥start£end¥local¶ImportDefaultSpecifierÌ¦Ì¬ÔrL”¤type¥start£end¤nameªIdentifierÌ¦Ì¬¦routerÔrM•¤type¥start£end¥value£raw§LiteralÌ²ÌÀ¬@ohos.router®'@ohos.router'
