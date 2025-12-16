@@ -1,7 +1,0 @@
-{
-  "src": [
-    "pages/MainPage",
-    "pages/NotificationPage",
-    "pages/SettingsPage"
-  ]
-}
