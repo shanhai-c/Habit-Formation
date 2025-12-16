@@ -1,7 +1,7 @@
 # Habit-Formation（习惯养成）项目文档
 ## 一、关于项目
 ### 项目名称
-Habit-Formation（习惯养成）
+Habit-Formation（江鸟中原）
 
 ### 项目概述
 Habit-Formation 是一款基于鸿蒙（HarmonyOS）系统开发的习惯养成类应用，旨在帮助用户建立、追踪和管理日常习惯，
